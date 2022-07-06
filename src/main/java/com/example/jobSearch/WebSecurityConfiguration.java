@@ -13,6 +13,6 @@ import org.springframework.security.web.DefaultSecurityFilterChain;
 public class WebSecurityConfiguration {
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer() throws Exception {
-        return (web) -> web.ignoring().antMatchers("/greeting", "/ignore2");
+        return (web) -> web.ignoring().antMatchers("/greeting", "/ignore2", "/users");
     }
 }
